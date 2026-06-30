@@ -105,7 +105,7 @@ router.delete('/quote/:id', async (req, res) => {
       id: id
     });
   } catch (error) {
-    console.error('Error in DELETE /quote/:id endpoint:', error);
+    console.error('Error in DELETE /api/quote/:id endpoint:', error);
     res.status(500).json({
       error: 'Failed to delete quote',
       message: error.message
